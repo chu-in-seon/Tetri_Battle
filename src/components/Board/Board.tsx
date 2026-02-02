@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Board.module.css';
 import Cell from '../Cell/Cell';
 import { type Cell as GridCell, GRID_HEIGHT, GRID_WIDTH, type TetrominoType } from '../../game/constants';
-import type { Piece } from '../../game/hooks/useTetrisGame';
+import type { Piece } from '../../game/hooks/useGame';
 
 interface BoardProps {
   grid: GridCell[][];

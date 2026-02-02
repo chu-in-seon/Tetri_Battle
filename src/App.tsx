@@ -1,7 +1,7 @@
 // src/App.tsx
 
 import styles from './App.module.css';
-import { useTetrisGame } from './game/hooks/useTetrisGame';
+import { useTetrisGame } from './game/hooks/useGame';
 import Board from './components/Board/Board';
 import TetrominoPreview from './components/TetrominoPreview/TetrominoPreview';
 
