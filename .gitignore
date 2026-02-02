@@ -26,4 +26,4 @@ dist-ssr
 # Project specific ignores
 .idx/
 GEMINI.md
-blueprint.md
+blueprint.md.env
