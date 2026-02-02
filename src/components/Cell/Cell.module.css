@@ -1,0 +1,36 @@
+/* src/components/Cell/Cell.module.css */
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: var(--color-empty);
+  border: 1px solid var(--bg-color);
+  box-sizing: border-box;
+}
+
+.I { background-color: var(--color-I); border-color: var(--color-I); box-shadow: 0 0 8px var(--color-I); }
+.O { background-color: var(--color-O); border-color: var(--color-O); box-shadow: 0 0 8px var(--color-O); }
+.T { background-color: var(--color-T); border-color: var(--color-T); box-shadow: 0 0 8px var(--color-T); }
+.S { background-color: var(--color-S); border-color: var(--color-S); box-shadow: 0 0 8px var(--color-S); }
+.Z { background-color: var(--color-Z); border-color: var(--color-Z); box-shadow: 0 0 8px var(--color-Z); }
+.J { background-color: var(--color-J); border-color: var(--color-J); box-shadow: 0 0 8px var(--color-J); }
+.L { background-color: var(--color-L); border-color: var(--color-L); box-shadow: 0 0 8px var(--color-L); }
+.G { background-color: var(--color-G); border-color: var(--color-G); opacity: 0.4; }
+
+.empty {
+  background-color: var(--color-empty);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.I, .O, .T, .S, .Z, .J, .L {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px var(--border-color), 0 0 10px var(--border-color);
+  }
+  to {
+    box-shadow: 0 0 10px var(--border-color), 0 0 20px var(--border-color), 0 0 30px var(--border-color);
+  }
+}

@@ -1,0 +1,34 @@
+/* src/styles/variables.css */
+
+:root {
+  /* Tetromino Colors (matching TETROMINO_COLORS in constants.ts) */
+  --color-I: #00FFFF; /* Cyan */
+  --color-O: #FFFF00; /* Yellow */
+  --color-T: #800080; /* Purple */
+  --color-S: #00FF00; /* Green */
+  --color-Z: #FF0000; /* Red */
+  --color-J: #0000FF; /* Blue */
+  --color-L: #FFA500; /* Orange */
+  --color-G: #808080; /* Grey for Ghost/Garbage */
+  --color-empty: #1a1a1a; /* Dark background for empty cells */
+
+  /* General Theme Colors */
+  --bg-color: #0d0d0d; /* Very dark background */
+  --text-color: #e0e0e0; /* Light grey text */
+  --border-color: #333; /* Dark grey border */
+  --accent-color: #6a0dad; /* Purple accent */
+  --accent-light: #9333ea; /* Lighter purple accent */
+
+  /* Font sizes */
+  --font-size-small: 0.8rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.2rem;
+  --font-size-xl: 2rem;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}

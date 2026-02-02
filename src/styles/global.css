@@ -1,0 +1,56 @@
+/* src/styles/global.css */
+
+@import './variables.css';
+
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive, Arial, sans-serif; /* Pixel font for retro feel */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Basic styling for the main App container */
+#root, .App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-light);
+  margin-bottom: var(--spacing-md);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--accent-light);
+}
+
+button:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+}
+
